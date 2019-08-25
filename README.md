@@ -8,7 +8,7 @@ Example usage:
 struct ContentView: View {
     var body: some View {
         VStack {
-            Text("press")
+            Text("Hello World")
             .padding()
             .background(BlurView(style: .systemThinMaterial))
         }
