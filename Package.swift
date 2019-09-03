@@ -6,7 +6,9 @@ import PackageDescription
 let package = Package(
     name: "BlurView",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v13),
+        .macOS(.v10_15),
+        .tvOS(.v13)
     ],
     products: [
         .library(
@@ -23,5 +25,8 @@ let package = Package(
         .testTarget(
             name: "BlurViewTests",
             dependencies: ["BlurView"]),
+    ],
+    swiftLanguageVersions: [
+        .version("5.1")
     ]
 )
